@@ -1,5 +1,5 @@
 import { featuresLeft, featuresRight } from "../constant";
-import InstructorsImage from "../assets/InstructorsImage.jpg";
+import instructorsImage from "../assets/instructorsImage.jpg";
 
 const Instructors = () => {
   return (
@@ -32,7 +32,7 @@ const Instructors = () => {
 
         <div className="w-full md:w-1/3 flex justify-center">
           <img
-            src={InstructorsImage}
+            src={instructorsImage}
             alt="Instructor Teaching"
             className="rounded-2xl shadow-md object-cover w-[300px] md:w-[350px]"
           />
