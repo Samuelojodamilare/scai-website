@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { offerDetails } from "../constant";
 
 const Offer = () => {
@@ -26,10 +27,9 @@ const Offer = () => {
               <div
                 className="w-10 h-10 p-2 flex items-center justify-center rounded-full text-white mb-4"
                 style={{ background: offer.color }}>
-                <img
-                  src={offer.icon}
-                  alt={offer.title}
-                  className="w-full h-full"
+                <FontAwesomeIcon
+                  icon={offer.icon}
+                  className="text-white text-xl"
                 />
               </div>
               <h3 className="text-lg font-semibold text-(--color-primary) mb-2">

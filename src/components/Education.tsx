@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { educationItems } from "../constant";
 import Button from "./Button";
 const Education = () => {
@@ -30,8 +31,11 @@ const Education = () => {
             <div
               key={index}
               className="bg-white rounded-2xl shadow-sm flex flex-col items-center justify-center p-8 hover:scale-105 transition-transform will-change-transform">
-              <div className="bg-[#e3e568] rounded-full p-4 text-2xl mb-4">
-                {item.icon}
+              <div className="bg-[#e3e568] rounded-full py-4 px-5 text-2xl mb-4">
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  className="text-(--color-primary) text-xl"
+                />
               </div>
               <h3 className="text-(--color-primary) font-semibold">
                 {item.title}

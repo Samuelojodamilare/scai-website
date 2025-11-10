@@ -1,39 +1,53 @@
-import offerIcon1 from "../assets/offerIcon1.png";
-import offerIcon2 from "../assets/offerIcon2.png";
-import offerIcon3 from "../assets/offerIcon3.png";
-import offerIcon4 from "../assets/offerIcon4.png";
 import gainImage from "../assets/gainImage.jpg";
 import testimonyimg1 from "../assets/testimonyimg1.jpg";
 import testimonyimg2 from "../assets/testimonyimg2.jpg";
+import {
+  faBolt,
+  faBookOpen,
+  faExpandAlt,
+  faRobot,
+  faSliders,
+  faSlidersH,
+  faUniversalAccess,
+  faUserPlus,
+  type IconDefinition,
+} from "@fortawesome/free-solid-svg-icons";
 
-export const offerDetails = [
+interface OfferDetail {
+  title: string;
+  description: string;
+  color: string;
+  icon: IconDefinition;
+}
+
+export const offerDetails: OfferDetail[] = [
   {
     title: "Onboarding Students",
     description:
       "Add and manage students in just a few clicks. With SatelliteCampusAI, registration is fast, organized, and seamless, helping institutions welcome new students without stress.",
     color: "#874BFC",
-    icon: offerIcon1,
+    icon: faUserPlus,
   },
   {
     title: "Automation with AI",
     description:
       "Let AI handle routine tasks like grading, reports, couese creation, communication etc. SatelliteCampusAI saves time and boosts efficiency through smart automation",
     color: "#A6C846",
-    icon: offerIcon2,
+    icon: faRobot,
   },
   {
     title: "Create & Organize Courses",
     description:
       "Easily create, structure, and manage courses in one place. SatelliteCampusAI helps instructors organize materials, set schedules, and update content effortlessly",
     color: "#4E94DC",
-    icon: offerIcon3,
+    icon: faBookOpen,
   },
   {
     title: "Customization",
     description:
       "Tailor the platform to fit your institution’s unique needs — adjust features, design, and workflow to match your academic structure and branding.",
     color: "#FD5CA9",
-    icon: offerIcon4,
+    icon: faSliders,
   },
 ];
 
@@ -66,10 +80,10 @@ export const needItems = [
 ];
 
 export const educationItems = [
-  { title: "Scalability", icon: "⚖️" },
-  { title: "Accessibility", icon: "🛣️" },
-  { title: "Flexibility", icon: "🔄" },
-  { title: "Impactful", icon: "🎯" },
+  { title: "Scalability", icon: faExpandAlt },
+  { title: "Accessibility", icon: faUniversalAccess },
+  { title: "Flexibility", icon: faSlidersH },
+  { title: "Impactful", icon: faBolt },
 ];
 
 export const gainItems = [
