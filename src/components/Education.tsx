@@ -1,5 +1,5 @@
 import { educationItems } from "../constant";
-
+import Button from "./Button";
 const Education = () => {
   const gradient = (direction: string, ...colors: string[]): string =>
     `linear-gradient(${direction}, ${colors.join(", ")})`;
@@ -18,12 +18,12 @@ const Education = () => {
             adapt to their needs, and deliver education that truly makes a
             difference.
           </p>
-          <button className="flex items-center gap-3 bg-[#e3e568] hover:bg-[#dada5c] text-(--color-primary) font-semibold px-6 py-3 pr-2 rounded-full transition-all">
+          <Button className="flex items-center gap-3 bg-[#e3e568] hover:bg-[#dada5c] text-(--color-primary) font-semibold px-6! py-3! pr-2! rounded-full! transition-all">
             Sign Up
             <span className="bg-(--color-primary) text-white rounded-full py-2.5 px-4">
               ↗
             </span>
-          </button>
+          </Button>
         </div>
         <div className="grid grid-cols-2 gap-6 md:w-1/2">
           {educationItems.map((item, index) => (
