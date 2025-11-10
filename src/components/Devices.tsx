@@ -4,7 +4,7 @@ const Devices = () => {
   return (
     <section className="relative w-full bg-[#F8FAFC] md:py-20 pt-8 pb-20 px-6 lg:px-12">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
-        <div className="flex-1 md:w-[683px] w-[400px]">
+        <div className="flex-1 md:w-[683px] w-[300px]">
           <img
             src={devicesImage}
             alt="Laptop and mobile phone"

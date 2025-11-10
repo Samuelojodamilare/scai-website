@@ -1,5 +1,3 @@
-import { Helmet, HelmetProvider } from "react-helmet-async";
-
 import Navbar from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import Offer from "./components/Offer";
@@ -13,16 +11,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <HelmetProvider>
-      <Helmet>
-        <title>SatelliteCAI - Smart Satellite Campus Management</title>
-        <meta
-          name="description"
-          content="SatelliteCAI helps universities manage multiple campuses seamlessly with smart enrollment, analytics, and control systems."
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Helmet>
-
+    <>
       <Navbar />
       <main>
         <HeroSection />
@@ -35,7 +24,7 @@ function App() {
         <Testimonies />
       </main>
       <Footer />
-    </HelmetProvider>
+    </>
   );
 }
 

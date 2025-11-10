@@ -34,19 +34,19 @@ const StudentsGain = () => {
             </button>
           ))}
         </div>
-        <div className="bg-white rounded-2xl shadow-sm pb-6 p-8 md:w-2/3 flex flex-col md:flex-row items-center gap-6 transition-all">
-          <div className="rounded-xl md:w-1/2 h-[300px] w-[261px] overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-sm pb-6 lg:p-8 md:p-4 p-8 md:w-2/3 w-full flex flex-col md:flex-row items-center gap-6 transition-all">
+          <div className="rounded-xl w-full lg:w-1/2 md:w-2/3 md:h-[300px] h-[250px] overflow-hidden">
             <img
               src={gainItems[activeIndex].image}
               alt={gainItems[activeIndex].title}
               className=" object-cover w-full h-full"
             />
           </div>
-          <div>
-            <h3 className="text-xl font-semibold text-[#19183b] mb-2">
+          <div className="text-center md:text-left">
+            <h3 className="lg:text-xl md:text-lg text-xl font-semibold text-[#19183b] mb-2">
               {gainItems[activeIndex].title}
             </h3>
-            <p className="text-[#19183b]/80 max-w-[950px] text-start leading-relaxed">
+            <p className="text-[#19183b]/80 lg:max-w-[950px] md:max-w-[800px] max-w-[950px] text-start leading-relaxed">
               {gainItems[activeIndex].description}
             </p>
           </div>

@@ -12,12 +12,12 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="max-w-[634px]">
+          className="lg:max-w-[634px] max-w-[634px] md:w-1/2">
           <h4 className="text-(--color-secondary) font-semibold mb-2">
             SatelliteCAI
           </h4>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-(--color-primary) leading-tight mb-6">
-            The Smarter Way to Run <br /> Your Satellite Campuses
+          <h1 className="md:text-4xl text-4xl lg:text-5xl font-extrabold text-(--color-primary) leading-tight mb-6">
+            The Smarter Way to Run Your Satellite Campuses
           </h1>
           <p className="text-gray-700 text-lg mb-8 leading-relaxed">
             From enrolment to performance analytics, SatelliteCampusAI enables
@@ -32,19 +32,19 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="relative grid grid-cols-2 gap-4 h-[366px]">
           <div className="flex flex-col gap-6 items-start">
-            <div className="rounded-[10px] rounded-tl-[100px] overflow-hidden w-[180px] md:w-[204px] h-[276px] ">
+            <div className="rounded-[10px] rounded-tl-[100px] overflow-hidden w-[180px] max-[378px]:w-[140px] md:w-[170px] lg:w-[204px] h-[276px] ">
               <img
                 src={hero1}
                 alt="a satellite"
                 className="w-full h-full object-cover"
               />
             </div>
-            <div className="rounded-tr-lg rounded-bl-[25px] bg-(--color-primary) w-[190px] md:w-[226px] h-[60px] md:h-[69px] " />
+            <div className="rounded-tr-lg rounded-bl-[25px] bg-(--color-primary) w-[190px] max-[378px]:w-[150px] md:w-[180px] lg:w-[226px] h-[60px] md:h-[69px] " />
           </div>
           <div className="flex flex-col gap-6 mt-16">
-            <div className="rounded-tr-[25px] rounded-bl-lg bg-(--color-secondary) w-[190px] md:w-[226px] h-[60px] md:h-[69px] " />
+            <div className="rounded-tr-[25px] rounded-bl-lg bg-(--color-secondary) w-[190px] max-[378px]:w-[150px] md:w-[180px] lg:w-[226px] h-[60px] md:h-[69px] " />
 
-            <div className="rounded-[10px] rounded-br-[100px] overflow-hidden w-[180px] md:w-[204px] h-[276px] ">
+            <div className="rounded-[10px] rounded-br-[100px] overflow-hidden w-[180px] max-[378px]:w-[140px] md:w-[170px] lg:w-[204px] h-[276px] ">
               <img
                 src={hero2}
                 alt="a classroom"

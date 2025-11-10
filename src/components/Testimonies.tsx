@@ -16,7 +16,7 @@ const Testimonies = () => {
           {testimonyItems.map((item, i) => (
             <div
               key={i}
-              className="relative p-6 rounded-2xl bg-[#E7F2EF] overflow-hidden flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02]">
+              className="relative p-6 rounded-2xl bg-[#E7F2EF] overflow-hidden flex flex-col justify-between transition-transform duration-300 hover:scale-[1.02] will-change-transform">
               <p className="max-w-[554px]">{item.desc}</p>
               <div className="flex justify-between items-end">
                 <h4 className="font-semibold text-(--color-primary) mt-10">
