@@ -13,10 +13,12 @@ const Header = () => {
               alt="scai-logo"
               width={128}
               height={50}
-              className="w-full h-full"
+              className="w-full h-full object-contain"
             />
           </div>
-          <span className="text-black hidden md:block">SatelliteCAI</span>
+          <span className="text-(--color-secondary) hidden md:block">
+            SatelliteCAI
+          </span>
         </div>
         <Button>Register</Button>
       </div>

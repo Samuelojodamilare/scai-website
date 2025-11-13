@@ -4,11 +4,18 @@ import testimonyimg2 from "../assets/testimonyimg2.jpg";
 import {
   faBolt,
   faBookOpen,
+  faChartLine,
+  faClipboardCheck,
+  faClock,
+  faComment,
+  faCommentDots,
   faExpandAlt,
+  faQuestionCircle,
   faRobot,
   faSliders,
   faSlidersH,
   faUniversalAccess,
+  faUserGroup,
   faUserPlus,
   type IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
@@ -91,45 +98,45 @@ export const gainItems = [
     title: "Course Study",
     description:
       "Students can access well-structured course materials, lectures, and assignments designed to enhance their understanding and learning pace.",
-    icon: "📘",
+    icon: faBookOpen,
     image: gainImage,
   },
   {
     title: "Connect with Peers",
     description:
       "Students don’t just study alone. They can connect with peers through discussion forums, group projects, and live sessions.",
-    icon: "🤝",
+    icon: faUserGroup,
     image: gainImage,
   },
   {
     title: "Grading",
     description:
       "Grading is automated and transparent. Students receive instant feedback and insights on their performance to help them improve.",
-    icon: "📊",
+    icon: faClipboardCheck,
     image: gainImage,
   },
   {
     title: "AI Assistance",
     description:
       "Students get personalized learning assistance through AI-powered tools that guide them through lessons, quizzes, and study plans.",
-    icon: "🤖",
+    icon: faRobot,
     image: gainImage,
   },
 ];
 
 export const featuresLeft = [
   {
-    icon: "📈",
+    icon: faChartLine,
     title: "Scaled Reports",
     desc: "Get insights into each student's individual and overall performance, enabling data-driven teaching strategies for improved learning outcomes.",
   },
   {
-    icon: "💬",
+    icon: faCommentDots,
     title: "Feedback",
     desc: "Students receive actionable feedback and personalized recommendations from instructors powered by AI insights.",
   },
   {
-    icon: "🤝",
+    icon: faComment,
     title: "Easy Communication",
     desc: "Facilitate seamless communication with students through integrated messaging tools, ensuring effortless interaction.",
   },
@@ -137,17 +144,17 @@ export const featuresLeft = [
 
 export const featuresRight = [
   {
-    icon: "⏱️",
+    icon: faClock,
     title: "Time Saving",
     desc: "Save valuable teaching time with streamlined tools that automate grading and lesson organization.",
   },
   {
-    icon: "🤖",
+    icon: faRobot,
     title: "AI Assistance",
     desc: "Enhance teaching experiences with AI-powered grading, recommendations, and teaching insights.",
   },
   {
-    icon: "❓",
+    icon: faQuestionCircle,
     title: "Moderated Q/A",
     desc: "Enable structured Q&A sessions that allow teachers to manage discussions and guide classroom interactions.",
   },

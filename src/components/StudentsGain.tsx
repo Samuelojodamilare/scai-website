@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { gainItems } from "../constant";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const StudentsGain = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -28,7 +29,10 @@ const StudentsGain = () => {
                     ? "bg-white text-[#19183b]"
                     : "bg-[#f4f4f4]"
                 }`}>
-                {item.icon}
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  className="text-(--color-primary) text-xl"
+                />
               </span>
               {item.title}
             </button>

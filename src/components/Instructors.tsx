@@ -1,5 +1,6 @@
 import { featuresLeft, featuresRight } from "../constant";
 import instructorsImage from "../assets/instructorsImage.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Instructors = () => {
   return (
@@ -19,7 +20,10 @@ const Instructors = () => {
         <div className="flex flex-col gap-6 w-full md:w-1/3">
           {featuresLeft.map((feature, index) => (
             <div key={index} className="flex items-start gap-4">
-              <span className="text-2xl">{feature.icon}</span>
+              <FontAwesomeIcon
+                icon={feature.icon}
+                className="text-(--color-primary) text-xl"
+              />
               <div>
                 <h4 className="font-semibold text-[#19183b] mb-1">
                   {feature.title}
@@ -41,7 +45,10 @@ const Instructors = () => {
         <div className="flex flex-col gap-6 w-full md:w-1/3">
           {featuresRight.map((item, i) => (
             <div key={i} className="flex items-start gap-4">
-              <span className="text-2xl">{item.icon}</span>
+              <FontAwesomeIcon
+                icon={item.icon}
+                className="text-(--color-primary) text-xl"
+              />
               <div>
                 <h4 className="font-semibold text-[#19183b] mb-1">
                   {item.title}

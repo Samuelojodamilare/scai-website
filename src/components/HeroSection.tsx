@@ -5,7 +5,7 @@ import hero2 from "../assets/hero2.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-[#fff9ef] pt-48 pb-20 py-20 px-4 lg:px-12 overflow-hidden">
+    <section className="relative bg-[#fff9ef] pt-40 md:pt-48 pb-20 py-20 px-4 lg:px-12 overflow-hidden">
       <div
         className={`max-w-7xl flex flex-col md:flex-row justify-between items-center gap-10 pb-8 mx-auto`}>
         <motion.div

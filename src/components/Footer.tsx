@@ -17,7 +17,7 @@ const Footer = () => {
             <h4 className="text-(--color-secondary) text-[22px] font-extrabold mb-2">
               SatelliteCAI
             </h4>
-            <div className="flex flex-row  gap-8">
+            <div className="flex flex-row md:flex-col lg:flex-row gap-8">
               <div className="text-(--color-primary) font-medium md:text-base text-sm">
                 <p>Email</p>
                 <p>satellitecampusai@gmail.com</p>
@@ -29,14 +29,14 @@ const Footer = () => {
             </div>
           </div>
           <div className="">
-            <h3 className="text-(--color-primary) text-2xl max-w-[470px] font-semibold mb-8 md:mb-16">
+            <h3 className="text-(--color-primary) text-2xl md:max-w-[350px] lg:max-w-[470px] max-w-[470px] font-semibold mb-8 md:mb-16">
               Get Started with your Satellite Campus Ai Setup Today
             </h3>
             <div className="flex gap-2">
               <Button>Register</Button>
-              <Button className="bg-transparent border border-(--color-primary) text-(--color-primary)!">
+              {/* <Button className="bg-transparent border border-(--color-primary) text-(--color-primary)!">
                 Book Demo
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -51,27 +51,33 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex gap-2">
-            <Button className="bg-transparent border border-(--color-primary) text-(--color-primary)!">
+            <div className="flex items-center rounded-lg px-4 md:px-5 py-3 transition-transform duration-300 hover:scale-[1.05] will-change-transform bg-transparent border border-(--color-primary) text-(--color-primary)!">
               <FontAwesomeIcon
                 icon={faChrome}
                 className="text-[#1E1E1E] text-2xl mr-2"
               />
-              Chrome
-            </Button>
-            <Button className="bg-transparent border border-(--color-primary) text-(--color-primary)!">
+              <span className="font-medium text-base lg:text-xl md:text-lg">
+                Chrome
+              </span>
+            </div>
+            <div className="flex items-center rounded-lg px-4 md:px-5 py-3 transition-transform duration-300 hover:scale-[1.05] will-change-transform bg-transparent border border-(--color-primary) text-(--color-primary)!">
               <FontAwesomeIcon
                 icon={faApple}
                 className="text-[#1E1E1E] text-2xl mr-2"
               />
-              IOS
-            </Button>
-            <Button className="bg-transparent border border-(--color-primary) text-(--color-primary)!">
+              <span className="font-medium text-base lg:text-xl md:text-lg">
+                IOS
+              </span>
+            </div>
+            <div className="flex items-center rounded-lg px-4 md:px-5 py-3  transition-transform duration-300 hover:scale-[1.05] will-change-transform bg-transparent border border-(--color-primary) text-(--color-primary)!">
               <FontAwesomeIcon
                 icon={faAndroid}
                 className="text-[#1E1E1E] text-2xl mr-2"
               />
-              Android
-            </Button>
+              <span className="font-medium text-base lg:text-xl md:text-lg">
+                Android
+              </span>
+            </div>
           </div>
         </div>
       </div>
